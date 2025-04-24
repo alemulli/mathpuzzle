@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="math-puzzle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <div id="dartboard">
+        <div class="inner-bull" onclick="hit(this.className)"></div>
+        <div class="outer-bull" onclick="hit('outer-bull')"></div>
+
+        <div class="single-inner-1" onclick="hit(this.className)"></div>
+        <div class="single-inner-2" onclick="hit(this.className)"></div>
+        <div class="single-inner-3" onclick="hit(this.className)"></div>
+        <div class="single-inner-4" onclick="hit(this.className)"></div>
+        <div class="single-inner-5" onclick="hit(this.className)"></div>
+        <div class="single-inner-6" onclick="hit(this.className)"></div>
+        <div class="single-inner-7" onclick="hit(this.className)"></div>
+        <div class="single-inner-8" onclick="hit(this.className)"></div>
+        <div class="single-inner-9" onclick="hit(this.className)"></div>
+        <div class="single-inner-10" onclick="hit(this.className)"></div>
+        <div class="single-inner-11" onclick="hit(this.className)"></div>
+        <div class="single-inner-12" onclick="hit(this.className)"></div>
+        <div class="single-inner-13" onclick="hit(this.className)"></div>
+        <div class="single-inner-14" onclick="hit(this.className)"></div>
+        <div class="single-inner-15" onclick="hit(this.className)"></div>
+        <div class="single-inner-16" onclick="hit(this.className)"></div>
+        <div class="single-inner-17" onclick="hit(this.className)"></div>
+        <div class="single-inner-18" onclick="hit(this.className)"></div>
+        <div class="single-inner-19" onclick="hit(this.className)"></div>
+        <div class="single-inner-20" onclick="hit(this.className)"></div>
+
+        <div class="triple-1" onclick="hit(this.className)"></div>
+        <div class="triple-2" onclick="hit(this.className)"></div>
+        <div class="triple-3" onclick="hit(this.className)"></div>
+        <div class="triple-4" onclick="hit(this.className)"></div>
+        <div class="triple-5" onclick="hit(this.className)"></div>
+        <div class="triple-6" onclick="hit(this.className)"></div>
+        <div class="triple-7" onclick="hit(this.className)"></div>
+        <div class="triple-8" onclick="hit(this.className)"></div>
+        <div class="triple-9" onclick="hit(this.className)"></div>
+        <div class="triple-10" onclick="hit(this.className)"></div>
+        <div class="triple-11" onclick="hit(this.className)"></div>
+        <div class="triple-12" onclick="hit(this.className)"></div>
+        <div class="triple-13" onclick="hit(this.className)"></div>
+        <div class="triple-14" onclick="hit(this.className)"></div>
+        <div class="triple-15" onclick="hit(this.className)"></div>
+        <div class="triple-16" onclick="hit(this.className)"></div>
+        <div class="triple-17" onclick="hit(this.className)"></div>
+        <div class="triple-18" onclick="hit(this.className)"></div>
+        <div class="triple-19" onclick="hit(this.className)"></div>
+        <div class="triple-20" onclick="hit(this.className)"></div>
+
+        <div class="single-outer-1" onclick="hit(this.className)"></div>
+        <div class="single-outer-2" onclick="hit(this.className)"></div>
+        <div class="single-outer-3" onclick="hit(this.className)"></div>
+        <div class="single-outer-4" onclick="hit(this.className)"></div>
+        <div class="single-outer-5" onclick="hit(this.className)"></div>
+        <div class="single-outer-6" onclick="hit(this.className)"></div>
+        <div class="single-outer-7" onclick="hit(this.className)"></div>
+        <div class="single-outer-8" onclick="hit(this.className)"></div>
+        <div class="single-outer-9" onclick="hit(this.className)"></div>
+        <div class="single-outer-10" onclick="hit(this.className)"></div>
+        <div class="single-outer-11" onclick="hit(this.className)"></div>
+        <div class="single-outer-12" onclick="hit(this.className)"></div>
+        <div class="single-outer-13" onclick="hit(this.className)"></div>
+        <div class="single-outer-14" onclick="hit(this.className)"></div>
+        <div class="single-outer-15" onclick="hit(this.className)"></div>
+        <div class="single-outer-16" onclick="hit(this.className)"></div>
+        <div class="single-outer-17" onclick="hit(this.className)"></div>
+        <div class="single-outer-18" onclick="hit(this.className)"></div>
+        <div class="single-outer-19" onclick="hit(this.className)"></div>
+        <div class="single-outer-20" onclick="hit(this.className)"></div>
+
+        <div class="double-1" onclick="hit(this.className)"></div>
+        <div class="double-2" onclick="hit(this.className)"></div>
+        <div class="double-3" onclick="hit(this.className)"></div>
+        <div class="double-4" onclick="hit(this.className)"></div>
+        <div class="double-5" onclick="hit(this.className)"></div>
+        <div class="double-6" onclick="hit(this.className)"></div>
+        <div class="double-7" onclick="hit(this.className)"></div>
+        <div class="double-8" onclick="hit(this.className)"></div>
+        <div class="double-9" onclick="hit(this.className)"></div>
+        <div class="double-10" onclick="hit(this.className)"></div>
+        <div class="double-11" onclick="hit(this.className)"></div>
+        <div class="double-12" onclick="hit(this.className)"></div>
+        <div class="double-13" onclick="hit(this.className)"></div>
+        <div class="double-14" onclick="hit(this.className)"></div>
+        <div class="double-15" onclick="hit(this.className)"></div>
+        <div class="double-16" onclick="hit(this.className)"></div>
+        <div class="double-17" onclick="hit(this.className)"></div>
+        <div class="double-18" onclick="hit(this.className)"></div>
+        <div class="double-19" onclick="hit(this.className)"></div>
+        <div class="double-20" onclick="hit(this.className)"></div>
+
+        <div class="out" onclick="hit(this.className)"></div>
+
+        <span class="num-1">1</span>
+        <span class="num-2">2</span>
+        <span class="num-3">3</span>
+        <span class="num-4">4</span>
+        <span class="num-5">5</span>
+        <span class="num-6">6</span>
+        <span class="num-7">7</span>
+        <span class="num-8">8</span>
+        <span class="num-9">9</span>
+        <span class="num-10">10</span>
+        <span class="num-11">11</span>
+        <span class="num-12">12</span>
+        <span class="num-13">13</span>
+        <span class="num-14">14</span>
+        <span class="num-15">15</span>
+        <span class="num-16">16</span>
+        <span class="num-17">17</span>
+        <span class="num-18">18</span>
+        <span class="num-19">19</span>
+        <span class="num-20">20</span>
+      </div>
+</body>
+</html>
