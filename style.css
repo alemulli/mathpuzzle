@@ -1,11 +1,14 @@
 #dartboard {
     position: relative;
     aspect-ratio: 1 / 1;
-    max-width: 800px;
-    max-height: 100dvh;
+    width: auto;
+    height: auto;
+    max-height: 90dvh;
     margin: 0 auto;
     z-index: 0;
-    background: white;
+    border-radius: 50%;
+    background: oklch(0.21 0.034 264.665);
+    border: 3px solid oklch(0.21 0.034 264.665);
 }
 
     .inner-bull, .outer-bull {
@@ -19,20 +22,20 @@
     .inner-bull {
         height: 5%;
         width: 5%;
-        background: black;
+        background: oklch(0.13 0.028 261.692);
         z-index: 7;
     }
 
     .outer-bull {
         height: 10%;
         width: 10%;
-        background: #6a7282;
+        background: oklch(0.446 0.03 256.802);
         z-index: 6;
     }
 
     .slice {
         appearance: none;
-        border: none;
+        border: 0px solid transparent;
         background: transparent;
         padding-block-start: 0px;
         padding-block-end: 0px;
@@ -44,15 +47,47 @@
         height: 50%;
         width: 11.75%;
         transform-origin: bottom;
+        transform: translateZ(0);
         display: flex;
         flex-direction: column-reverse;
         clip-path: polygon(0 0, 100% 0, 100% 25%, 52% 100%, 49% 100%, 0 26%);
-        transition: opacity 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
-        &:hover {
-            opacity: 50%;
+        .section-a, .section-s, .section-m, .section-d {
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover, &:focus-visible {
+            .section-a:not(.active-blue), .section-s:not(.active-yellow), .section-m:not(.active-pink), .section-d:not(.active-purple), .number span {
+                    filter: contrast(25%);
+            }
+
+            .section-a.active-blue {
+                background-color: oklch(0.882 0.059 254.128);
+            }
+
+            .section-s.active-yellow {
+                background-color: oklch(0.973 0.071 103.193);
+            }
+
+            .section-m.active-pink {
+                background-color: oklch(0.899 0.061 343.231);
+            }
+
+            .section-d.active-purple {
+                background-color: oklch(0.811 0.111 293.571);
+            }
+
             cursor: pointer;
         }
+
+        &:focus-visible {
+            outline: none;
+
+            .number {
+                outline: oklch(0.707 0.165 254.624) auto 1px;
+            }
+        } 
     }
 
     .section-a {
@@ -60,15 +95,15 @@
         width: 100%;
 
         &.dark {
-            background-color: black;
+            background-color: oklch(0.13 0.028 261.692);
         }
     
         &.light {
-            background-color: white;
+            background-color: oklch(0.967 0.003 264.542);
         }
 
         &.active-blue {
-            background-color: lightblue;
+            background-color: oklch(0.809 0.105 251.813);
         }
     }
     .section-s {
@@ -77,15 +112,15 @@
 
     
         &.dark {
-            background-color: #1e2939;
+            background-color: oklch(0.278 0.033 256.848);
         }
     
         &.light {
-            background-color: #6a7282;
+            background-color: oklch(0.446 0.03 256.802);
         }
 
         &.active-yellow {
-             background-color: lemonchiffon;
+             background-color: oklch(0.945 0.129 101.54);
          }
     }
     
@@ -95,15 +130,15 @@
 
 
         &.dark {
-            background-color: black;
+            background-color: oklch(0.13 0.028 261.692);
         }
     
         &.light {
-            background-color: white;
+            background-color: oklch(0.967 0.003 264.542);
         }
 
         &.active-pink {
-            background-color: pink;
+            background-color: oklch(0.823 0.12 346.018);
         }
     }
     
@@ -113,26 +148,26 @@
 
 
         &.dark {
-            background-color: #1e2939;
+            background-color: oklch(0.278 0.033 256.848);
         }
 
         &.light {
-            background-color: #6a7282;
+            background-color: oklch(0.446 0.03 256.802);
         }
 
         &.active-purple {
-            background-color: mediumpurple;
+            background-color: oklch(0.702 0.183 293.541);
         }
     }
     
     .number {
         height: 25%;
         width: 100%;
-        background: white;
+        background: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: black;
+        color: oklch(0.967 0.003 264.542);
     }
 
     #slice-1 {
