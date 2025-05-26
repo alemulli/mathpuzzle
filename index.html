@@ -3,120 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DART</title>
     <script src="math-puzzle.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
     <div id="dartboard">
-        <div class="inner-bull" onclick="hit(this.className)"></div>
-        <div class="outer-bull" onclick="hit('outer-bull')"></div>
+            <div class="inner-bull"></div>
+            <div class="outer-bull"></div>
 
-        <div id="a-1" data-value="1" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-2" data-value="2" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-3" data-value="3" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-4" data-value="4" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-5" data-value="5" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-6" data-value="6" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-7" data-value="7" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-8" data-value="8" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-9" data-value="9" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-10" data-value="10" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-11" data-value="11" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-12" data-value=12 class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-13" data-value="13" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-14" data-value="14" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-15" data-value="15" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-16" data-value="16" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-17" data-value="17" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-18" data-value="18" class="section-a dark" onclick="hit(this.className)"></div>
-        <div id="a-19" data-value="19" class="section-a light" onclick="hit(this.className)"></div>
-        <div id="a-20" data-value="20" class="section-a dark" onclick="hit(this.className)"></div>
-
-        <div id="s-1" data-value="1" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-2" data-value="2" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-3" data-value="3" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-4" data-value="4" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-5" data-value="5" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-6" data-value="6" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-7" data-value="7" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-8" data-value="8" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-9" data-value="9" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-10" data-value="10" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-11" data-value="11" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-12" data-value="12" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-13" data-value="13" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-14" data-value="14" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-15" data-value="15" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-16" data-value="16" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-17" data-value="17" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-18" data-value="18" class="section-s light" onclick="hit(this.className)"></div>
-        <div id="s-19" data-value="19" class="section-s dark" onclick="hit(this.className)"></div>
-        <div id="s-20" data-value="20" class="section-s light" onclick="hit(this.className)"></div>
-
-        <div id="m-1" data-value="1" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-2" data-value="2" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-3" data-value="3" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-4" data-value="4" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-5" data-value="5" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-6" data-value="6" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-7" data-value="7" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-8" data-value="8" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-9" data-value="9" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-10" data-value="10" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-11" data-value="11" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-12" data-value="12" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-13" data-value="13" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-14" data-value="14" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-15" data-value="15" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-16" data-value="16" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-17" data-value="17" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-18" data-value="18" class="section-m dark" onclick="hit(this.className)"></div>
-        <div id="m-19" data-value="19" class="section-m light" onclick="hit(this.className)"></div>
-        <div id="m-20" data-value="20" class="section-m dark" onclick="hit(this.className)"></div>
-
-        <div id="d-1" data-value="1" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-2" data-value="2" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-3" data-value="3" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-4" data-value="4" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-5" data-value="5" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-6" data-value="6" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-7" data-value="7" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-8" data-value="8" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-9" data-value="9" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-10" data-value="10" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-11" data-value="11" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-12" data-value="12" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-13" data-value="13" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-14" data-value="14" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-15" data-value="15" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-16" data-value="16" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-17" data-value="17" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-18" data-value="18" class="section-d light" onclick="hit(this.className)"></div>
-        <div id="d-19" data-value="19" class="section-d dark" onclick="hit(this.className)"></div>
-        <div id="d-20" data-value="20" class="section-d light" onclick="hit(this.className)"></div>
-
-        <span id="num-1" data-value="1" class="number">1</span>
-        <span id="num-2" data-value="2" class="number">2</span>
-        <span id="num-3" data-value="3" class="number">3</span>
-        <span id="num-4" data-value="4" class="number">4</span>
-        <span id="num-5" data-value="5" class="number">5</span>
-        <span id="num-6" data-value="6" class="number">6</span>
-        <span id="num-7" data-value="7" class="number">7</span>
-        <span id="num-8" data-value="8" class="number">8</span>
-        <span id="num-9" data-value="9" class="number">9</span>
-        <span id="num-10" data-value="10" class="number">10</span>
-        <span id="num-11" data-value="11" class="number">11</span>
-        <span id="num-12" data-value="12" class="number">12</span>
-        <span id="num-13" data-value="13" class="number">13</span>
-        <span id="num-14" data-value="14" class="number">14</span>
-        <span id="num-15" data-value="15" class="number">15</span>
-        <span id="num-16" data-value="16" class="number">16</span>
-        <span id="num-17" data-value="17" class="number">17</span>
-        <span id="num-18" data-value="18" class="number">18</span>
-        <span id="num-19" data-value="19" class="number">19</span>
-        <span id="num-20" data-value="20" class="number">20</span>
+            <button id="slice-1" class="slice" data-value="1">
+                <div id="a-1" class="section-a light"></div>
+                <div id="s-1" class="section-s dark"></div>
+                <div id="m-1" class="section-m light"></div>
+                <div id="d-1" class="section-d dark"></div>
+                <div id="num-1" class="number">1</span></div>
+            </button>
+            <button id="slice-2" class="slice" data-value="2">
+                <div id="a-2" class="section-a dark"></div>
+                <div id="s-2" class="section-s light"></div>
+                <div id="m-2" class="section-m dark"></div>
+                <div id="d-2" class="section-d light"></div>
+                <div id="num-2" class="number"><span>2</span></div>
+            </button>
+            <button id="slice-3" class="slice" data-value="3">
+                <div id="a-3" class="section-a dark"></div>
+                <div id="s-3" class="section-s light"></div>
+                <div id="m-3" class="section-m dark"></div>
+                <div id="d-3" class="section-d light"></div>
+                <div id="num-3" class="number"><span>3</span></div>
+            </button>
+            <button id="slice-4" class="slice" data-value="4">
+                <div id="a-4" class="section-a light"></div>
+                <div id="s-4" class="section-s dark"></div>
+                <div id="m-4" class="section-m light"></div>
+                <div id="d-4" class="section-d dark"></div>
+                <div id="num-4" class="number"><span>4</span></div>
+            </button>
+            <button id="slice-5" class="slice" data-value="5">
+                <div id="a-5" class="section-a light"></div>
+                <div id="s-5" class="section-s dark"></div>
+                <div id="m-5" class="section-m light"></div>
+                <div id="d-5" class="section-d dark"></div>
+                <div id="num-5" class="number"><span>5</span></div>
+            </button>
+            <button id="slice-6" class="slice" data-value="6">
+                <div id="a-6" class="section-a light"></div>
+                <div id="s-6" class="section-s dark"></div>
+                <div id="m-6" class="section-m light"></div>
+                <div id="d-6" class="section-d dark"></div>
+                <div id="num-6" class="number"><span>6</span></div>
+            </button>
+            <button id="slice-7" class="slice" data-value="7">
+                <div id="a-7" class="section-a dark"></div>
+                <div id="s-7" class="section-s light"></div>
+                <div id="m-7" class="section-m dark"></div>
+                <div id="d-7" class="section-d light"></div>
+                <div id="num-7" class="number"><span>7</span></div>
+            </button>
+            <button id="slice-8" class="slice" data-value="8">
+                <div id="a-8" class="section-a dark"></div>
+                <div id="s-8" class="section-s light"></div>
+                <div id="m-8" class="section-m dark"></div>
+                <div id="d-8" class="section-d light"></div>
+                <div id="num-8" class="number"><span>8</span></div>
+            </button>
+            <button id="slice-9" class="slice" data-value="9">
+                <div id="a-9" class="section-a light"></div>
+                <div id="s-9" class="section-s dark"></div>
+                <div id="m-9" class="section-m light"></div>
+                <div id="d-9" class="section-d dark"></div>
+                <div id="num-9" class="number"><span>9</span></div>
+            </button>
+            <button id="slice-10" class="slice" data-value="10">
+                <div id="a-10" class="section-a dark"></div>
+                <div id="s-10" class="section-s light"></div>
+                <div id="m-10" class="section-m dark"></div>
+                <div id="d-10" class="section-d light"></div>
+                <div id="num-10" class="number"><span>10</span></div>
+            </button>
+            <button id="slice-11" class="slice" data-value="11">
+                <div id="a-11" class="section-a light"></div>
+                <div id="s-11" class="section-s dark"></div>
+                <div id="m-11" class="section-m light"></div>
+                <div id="d-11" class="section-d dark"></div>
+                <div id="num-11" class="number"><span>11</span></div>
+            </button>
+            <button id="slice-12" class="slice" data-value="12">
+                <div id="a-12" class="section-a dark"></div>
+                <div id="s-12" class="section-s light"></div>
+                <div id="m-12" class="section-m dark"></div>
+                <div id="d-12" class="section-d light"></div>
+                <div id="num-12" class="number"><span>12</span></div>
+            </button>
+            <button id="slice-13" class="slice" data-value="13">
+                <div id="a-13" class="section-a dark"></div>
+                <div id="s-13" class="section-s light"></div>
+                <div id="m-13" class="section-m dark"></div>
+                <div id="d-13" class="section-d light"></div>
+                <div id="num-13" class="number"><span>13</span></div>
+            </button>
+            <button id="slice-14" class="slice" data-value="14">
+                <div id="a-14" class="section-a dark"></div>
+                <div id="s-14" class="section-s light"></div>
+                <div id="m-14" class="section-m dark"></div>
+                <div id="d-14" class="section-d light"></div>
+                <div id="num-14" class="number"><span>14</span></div>
+            </button>
+            <button id="slice-15" class="slice" data-value="15">
+                <div id="a-15" class="section-a light"></div>
+                <div id="s-15" class="section-s dark"></div>
+                <div id="m-15" class="section-m light"></div>
+                <div id="d-15" class="section-d dark"></div>
+                <div id="num-15" class="number"><span>15</span></div>
+            </button>
+            <button id="slice-16" class="slice" data-value="16">
+                <div id="a-16" class="section-a light"></div>
+                <div id="s-16" class="section-s dark"></div>
+                <div id="m-16" class="section-m light"></div>
+                <div id="d-16" class="section-d dark"></div>
+                <div id="num-16" class="number"><span>16</span></div>
+            </button>
+            <button id="slice-17" class="slice" data-value="17">
+                <div id="a-17" class="section-a light"></div>
+                <div id="s-17" class="section-s dark"></div>
+                <div id="m-17" class="section-m light"></div>
+                <div id="d-17" class="section-d dark"></div>
+                <div id="num-17" class="number"><span>17</span></div>
+            </button>
+            <button id="slice-18" class="slice" data-value="18">
+                <div id="a-18" class="section-a dark"></div>
+                <div id="s-18" class="section-s light"></div>
+                <div id="m-18" class="section-m dark"></div>
+                <div id="d-18" class="section-d light"></div>
+                <div id="num-18" class="number"><span>18</span></div>
+            </button>
+            <button id="slice-19" class="slice" data-value="19">
+                <div id="a-19" class="section-a light"></div>
+                <div id="s-19" class="section-s dark"></div>
+                <div id="m-19" class="section-m light"></div>
+                <div id="d-19" class="section-d dark"></div>
+                <div id="num-19" class="number"><span>19</span></div>
+            </button>
+            <button id="slice-20" class="slice" data-value="20">
+                <div id="a-20" class="section-a dark"></div>
+                <div id="s-20" class="section-s light"></div>
+                <div id="m-20" class="section-m dark"></div>
+                <div id="d-20" class="section-d light"></div>
+                <div id="num-20" class="number"><span>20</span></div>
+            </button>
       </div>
 </body>
 </html>
