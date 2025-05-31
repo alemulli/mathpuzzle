@@ -32,9 +32,14 @@
 
   * {
     font-family: "Space Grotesk", sans-serif;
-    font-weight: bold;
-    font-size: 1.25rem;
+    /* font-weight: bold; */
+    font-size: 16px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* h1 60px */
+  /* p 20px */
+  /* button 24px*/
+  /* numbers 24px */
