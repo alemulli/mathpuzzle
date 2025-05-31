@@ -1,5 +1,9 @@
 // TODO: if there is only 1 step regenerate the puzzle because it needs a minumum of 2 steps for it to actually be a puzzle
 
+let currentPuzzle = null;
+let currentStreak = 0;
+const STREAK_STORAGE_KEY = 'dartStreak';
+
 function generatePuzzle() {
     const targetRange = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
     const operations = [
