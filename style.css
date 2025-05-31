@@ -71,6 +71,7 @@ body {
     border-radius: 50%;
     background: oklch(0.21 0.034 264.665);
     border: 3px solid oklch(0.21 0.034 264.665);
+    filter: drop-shadow(0 4px 4px rgb(0 0 0 / 0.2));
 }
 
     .inner-bull, .outer-bull {
@@ -351,7 +352,8 @@ body {
         color: oklch(0.13 0.028 261.692);
         font-weight: 700;
         text-decoration: none;
-
+        filter: drop-shadow(0 4px 4px rgb(0 0 0 / 0.2));
+        
         &:before {
             content: "";
             position: absolute;
@@ -362,7 +364,7 @@ body {
             background: linear-gradient(90deg,rgba(190, 219, 255, 1) 0%, rgba(254, 249, 194, 1) 33%, rgba(252, 206, 232, 1) 66%, rgba(196, 180, 255, 1) 100%);
             z-index: -2;
         }
-
+        
         &:after {
             content: "";
             position: absolute;
@@ -374,8 +376,9 @@ body {
             z-index: -1;
             transition: opacity 0.3s ease-in-out;
         }
-
+        
         &:hover{
+            filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.2));
             &:after {
                 opacity: 0;
             }
@@ -391,6 +394,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 800px;
+    filter: drop-shadow(0 4px 4px rgb(0 0 0 / 0.2));
     
     > div {
         padding: 0 1.5rem;
@@ -412,7 +416,7 @@ body {
         span {
             font-size: 1.44rem;
             color: oklch(0.13 0.028 261.692);
-            font-size:  clamp(3.75rem, 5vw, 5rem);
+            font-size:  clamp(2.488rem, 5vw, 4rem);
         }
     }
 }

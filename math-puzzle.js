@@ -159,3 +159,6 @@ function startNewPuzzle() {
     startNewPuzzle();
 
 });
+
+
+// TODO: implement the highest streak that saves in local storage, fills on page load, and updates when the user does reach a higher streak than the previously saved one
